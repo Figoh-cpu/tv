@@ -18,14 +18,14 @@ COUNTER_FILE = "计数.txt"
 IP_DIR = "ip"
 RTP_DIR = "rtp"
 ZUBO_FILE = "zubo.txt"
-IPTV_FILE = "IPTV.txt"
+IPTV_FILE = "tv.txt"
 
 # ===============================
 # 分类与映射配置
 CHANNEL_CATEGORIES = {
     "央视频道": [
-        "CCTV1", "CCTV2", "CCTV3", "CCTV4", "CCTV4欧洲", "CCTV4美洲", "CCTV5", "CCTV5+", "CCTV6", "CCTV7",
-        "CCTV8", "CCTV9", "CCTV10", "CCTV11", "CCTV12", "CCTV13", "CCTV14", "CCTV15", "CCTV16", "CCTV17", "CCTV4K", "CCTV8K",
+        "CCTV-1综合", "CCTV-2财经", "CCTV-3综艺", "CCTV-4中文国际", "CCTV-4欧洲", "CCTV-4美洲", "CCTV-5体育", "CCTV-5+体育赛事", "CCTV-6电影", "CCTV-7国防军事",
+        "CCTV-8电视剧", "CCTV-9纪录", "CCTV-10科教", "CCTV-11戏曲", "CCTV-12社会与法", "CCTV-13新闻", "CCTV-14少儿", "CCTV-15音乐", "CCTV-16奥林匹克", "CCTV-17农业农村", "CCTV-4K", "CCTV-8K",
         "兵器科技", "风云音乐", "风云足球", "风云剧场", "怀旧剧场", "第一剧场", "女性时尚", "世界地理", "央视台球", "高尔夫网球",
         "央视文化精品", "卫生健康", "电视指南"
     ],
@@ -38,7 +38,7 @@ CHANNEL_CATEGORIES = {
     ],
     "数字频道": [
         "CHC动作电影", "CHC家庭影院", "CHC影迷电影", "淘电影", "淘精彩", "淘剧场", "淘4K", "淘娱乐", "淘BABY", "淘萌宠", "重温经典",
-        "星空卫视", "CHANNEL[V]", "凤凰卫视中文台", "凤凰卫视资讯台", "凤凰卫视香港台", "凤凰卫视电影台", "求索纪录", "求索科学",
+        "星空卫视", "CHANNEL[V]", "凤凰中文", "凤凰资讯", "凤凰香港", "凤凰电影", "求索纪录", "求索科学",
         "求索生活", "求索动物", "纪实人文", "金鹰纪实", "纪实科教", "睛彩青少", "睛彩竞技", "睛彩篮球", "睛彩广场舞", "魅力足球", "五星体育",
         "劲爆体育", "快乐垂钓", "茶频道", "先锋乒羽", "天元围棋", "汽摩", "梨园频道", "文物宝库", "武术世界", "哒啵赛事", "哒啵电竞", "黑莓电影", "黑莓动画", 
         "乐游", "生活时尚", "都市剧场", "欢笑剧场", "游戏风云", "金色学堂", "动漫秀场", "新动漫", "卡酷少儿", "金鹰卡通", "优漫卡通", "哈哈炫动", "嘉佳卡通", 
@@ -55,28 +55,28 @@ CHANNEL_CATEGORIES = {
 
 # ===== 映射（别名 -> 标准名） =====
 CHANNEL_MAPPING = {
-    "CCTV1": ["CCTV-1", "CCTV-1 HD", "CCTV1 HD", "CCTV-1综合"],
-    "CCTV2": ["CCTV-2", "CCTV-2 HD", "CCTV2 HD", "CCTV-2财经"],
-    "CCTV3": ["CCTV-3", "CCTV-3 HD", "CCTV3 HD", "CCTV-3综艺"],
-    "CCTV4": ["CCTV-4", "CCTV-4 HD", "CCTV4 HD", "CCTV-4中文国际"],
-    "CCTV4欧洲": ["CCTV-4欧洲", "CCTV-4欧洲", "CCTV4欧洲 HD", "CCTV-4 欧洲", "CCTV-4中文国际欧洲", "CCTV4中文欧洲"],
-    "CCTV4美洲": ["CCTV-4美洲", "CCTV-4北美", "CCTV4美洲 HD", "CCTV-4 美洲", "CCTV-4中文国际美洲", "CCTV4中文美洲"],
-    "CCTV5": ["CCTV-5", "CCTV-5 HD", "CCTV5 HD", "CCTV-5体育"],
-    "CCTV5+": ["CCTV-5+", "CCTV-5+ HD", "CCTV5+ HD", "CCTV-5+体育赛事"],
-    "CCTV6": ["CCTV-6", "CCTV-6 HD", "CCTV6 HD", "CCTV-6电影"],
-    "CCTV7": ["CCTV-7", "CCTV-7 HD", "CCTV7 HD", "CCTV-7国防军事"],
-    "CCTV8": ["CCTV-8", "CCTV-8 HD", "CCTV8 HD", "CCTV-8电视剧"],
-    "CCTV9": ["CCTV-9", "CCTV-9 HD", "CCTV9 HD", "CCTV-9纪录"],
-    "CCTV10": ["CCTV-10", "CCTV-10 HD", "CCTV10 HD", "CCTV-10科教"],
-    "CCTV11": ["CCTV-11", "CCTV-11 HD", "CCTV11 HD", "CCTV-11戏曲"],
-    "CCTV12": ["CCTV-12", "CCTV-12 HD", "CCTV12 HD", "CCTV-12社会与法"],
-    "CCTV13": ["CCTV-13", "CCTV-13 HD", "CCTV13 HD", "CCTV-13新闻"],
-    "CCTV14": ["CCTV-14", "CCTV-14 HD", "CCTV14 HD", "CCTV-14少儿"],
-    "CCTV15": ["CCTV-15", "CCTV-15 HD", "CCTV15 HD", "CCTV-15音乐"],
-    "CCTV16": ["CCTV-16", "CCTV-16 HD", "CCTV-16 4K", "CCTV-16奥林匹克", "CCTV16 4K", "CCTV-16奥林匹克4K"],
-    "CCTV17": ["CCTV-17", "CCTV-17 HD", "CCTV17 HD", "CCTV-17农业农村"],
-    "CCTV4K": ["CCTV4K超高清", "CCTV-4K超高清", "CCTV-4K 超高清", "CCTV 4K"],
-    "CCTV8K": ["CCTV8K超高清", "CCTV-8K超高清", "CCTV-8K 超高清", "CCTV 8K"],
+    "CCTV-1综合": ["CCTV-1", "CCTV-1 HD", "CCTV1 HD", "CCTV1"],
+    "CCTV-2财经": ["CCTV-2", "CCTV-2 HD", "CCTV2 HD", "CCTV2"],
+    "CCTV-3综艺": ["CCTV-3", "CCTV-3 HD", "CCTV3 HD", "CCTV3"],
+    "CCTV-4中文国际": ["CCTV-4", "CCTV-4 HD", "CCTV4 HD", "CCTV4"],
+    "CCTV-4欧洲": ["CCTV4欧洲", "CCTV-4欧洲", "CCTV4欧洲 HD", "CCTV-4 欧洲", "CCTV-4中文国际欧洲", "CCTV4中文欧洲"],
+    "CCTV-4美洲": ["CCTV4美洲", "CCTV-4北美", "CCTV4美洲 HD", "CCTV-4 美洲", "CCTV-4中文国际美洲", "CCTV4中文美洲"],
+    "CCTV-5体育": ["CCTV-5", "CCTV-5 HD", "CCTV5 HD", "CCTV5"],
+    "CCTV-5+体育赛事": ["CCTV-5+", "CCTV-5+ HD", "CCTV5+ HD", "CCTV5+"],
+    "CCTV-6电影": ["CCTV-6", "CCTV-6 HD", "CCTV6 HD", "CCTV6"],
+    "CCTV-7国防军事": ["CCTV-7", "CCTV-7 HD", "CCTV7 HD", "CCTV7"],
+    "CCTV-8电视剧": ["CCTV-8", "CCTV-8 HD", "CCTV8 HD", "CCTV8"],
+    "CCTV-9纪录": ["CCTV-9", "CCTV-9 HD", "CCTV9 HD", "CCTV9"],
+    "CCTV-10科教": ["CCTV-10", "CCTV-10 HD", "CCTV10 HD", "CCTV10"],
+    "CCTV-11戏曲": ["CCTV-11", "CCTV-11 HD", "CCTV11 HD", "CCTV11"],
+    "CCTV-12社会与法": ["CCTV-12", "CCTV-12 HD", "CCTV12 HD", "CCTV12"],
+    "CCTV-13新闻": ["CCTV-13", "CCTV-13 HD", "CCTV13 HD", "CCTV13"],
+    "CCTV-14少儿": ["CCTV-14", "CCTV-14 HD", "CCTV14 HD", "CCTV14"],
+    "CCTV-15音乐": ["CCTV-15", "CCTV-15 HD", "CCTV15 HD", "CCTV15"],
+    "CCTV-16奥林匹克": ["CCTV-16", "CCTV-16 HD", "CCTV-16 4K", "CCTV16", "CCTV16 4K", "CCTV-16奥林匹克4K"],
+    "CCTV-17农业农村": ["CCTV-17", "CCTV-17 HD", "CCTV17 HD", "CCTV17"],
+    "CCTV-4K": ["CCTV4K超高清", "CCTV4K", "CCTV-4K 超高清", "CCTV 4K"],
+    "CCTV-8K": ["CCTV8K超高清", "CCTV8K", "CCTV-8K 超高清", "CCTV 8K"],
     "兵器科技": ["CCTV-兵器科技", "CCTV兵器科技"],
     "风云音乐": ["CCTV-风云音乐", "CCTV风云音乐"],
     "第一剧场": ["CCTV-第一剧场", "CCTV第一剧场"],
@@ -125,10 +125,10 @@ CHANNEL_MAPPING = {
     "纪实科教": ["北京纪实科教", "BRTV纪实科教", "纪实科教8K"],
     "星空卫视": ["星空衛視", "星空衛视", "星空卫視"],
     "CHANNEL[V]": ["CHANNEL-V", "Channel[V]"],
-    "凤凰卫视中文台": ["凤凰中文", "凤凰中文台", "凤凰卫视中文", "凤凰卫视"],
-    "凤凰卫视香港台": ["凤凰香港台", "凤凰卫视香港", "凤凰香港"],
-    "凤凰卫视资讯台": ["凤凰资讯", "凤凰资讯台", "凤凰咨询", "凤凰咨询台", "凤凰卫视咨询台", "凤凰卫视资讯", "凤凰卫视咨询"],
-    "凤凰卫视电影台": ["凤凰电影", "凤凰电影台", "凤凰卫视电影", "鳳凰衛視電影台", " 凤凰电影"],
+    "凤凰中文": ["凤凰中文", "凤凰中文台", "凤凰卫视中文", "凤凰卫视"],
+    "凤凰香港": ["凤凰香港台", "凤凰卫视香港", "凤凰香港"],
+    "凤凰资讯": ["凤凰资讯", "凤凰资讯台", "凤凰咨询", "凤凰咨询台", "凤凰卫视咨询台", "凤凰卫视资讯", "凤凰卫视咨询"],
+    "凤凰电影": ["凤凰电影", "凤凰电影台", "凤凰卫视电影", "鳳凰衛視電影台", " 凤凰电影"],
     "茶频道": ["湖南茶频道"],
     "快乐垂钓": ["湖南快乐垂钓"],
     "先锋乒羽": ["湖南先锋乒羽"],
@@ -310,9 +310,9 @@ def second_stage():
     print(f"🎯 第二阶段完成，共 {len(unique)} 条有效 URL")
 
 # ===============================
-# 第三阶段：检测代表频道并生成 IPTV.txt（使用 ffprobe + 映射匹配 + 分类排序 + 多线程 + 后缀编号）
+# 第三阶段：检测代表频道并生成 tv.txt（使用 ffprobe + 映射匹配 + 分类排序 + 多线程 + 后缀编号）
 def third_stage():
-    print("🧩 第三阶段：多线程检测代表频道生成 IPTV.txt")
+    print("🧩 第三阶段：多线程检测代表频道生成 tv.txt")
 
     if not os.path.exists(ZUBO_FILE):
         print("⚠️ zubo.txt 不存在，跳过")
@@ -393,7 +393,7 @@ def third_stage():
                 seen.add(key)
                 valid_lines.append(f"{c},{u}${province_operator}")
 
-    # ---- 分类写出 IPTV.txt ----
+    # ---- 分类写出 tv.txt ----
     with open(IPTV_FILE, "w", encoding="utf-8") as f:
         for category, ch_list in CHANNEL_CATEGORIES.items():
             f.write(f"{category},#genre#\n")
@@ -404,7 +404,7 @@ def third_stage():
                         f.write(line + "\n")
             f.write("\n")
 
-    print(f"🎯 IPTV.txt 生成完成（分类+去重+多线程检测），共 {len(valid_lines)} 条频道")
+    print(f"🎯 tv.txt 生成完成（分类+去重+多线程检测），共 {len(valid_lines)} 条频道")
 
 # ===============================
 # 文件推送（⚠️ 已去掉 zubo.txt）
@@ -414,8 +414,8 @@ def push_all_files():
     os.system('git config --global user.email "github-actions@users.noreply.github.com"')
     os.system("git add 计数.txt")
     os.system("git add ip/*.txt || true")
-    os.system("git add IPTV.txt || true")
-    os.system('git commit -m "自动更新：计数、IP文件、IPTV.txt" || echo "⚠️ 无需提交"')
+    os.system("git add tv.txt || true")
+    os.system('git commit -m "自动更新：计数、IP文件、tv.txt" || echo "⚠️ 无需提交"')
     os.system("git push origin main || echo '⚠️ 推送失败'")
 
 
