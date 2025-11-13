@@ -37,6 +37,6 @@ jobs:
           git config --global user.email "github-actions@users.noreply.github.com"
           git add 计数.txt
           git add ip/*.txt || true
-          git add IPTV.txt || true
-          git commit -m "自动更新：计数、IP文件、IPTV.txt" || echo "⚠️ 无需提交"
+          git add tv.txt || true
+          git commit -m "自动更新：计数、IP文件、tv.txt" || echo "⚠️ 无需提交"
           git push origin main || echo "⚠️ 推送失败"
