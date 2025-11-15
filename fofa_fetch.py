@@ -297,7 +297,7 @@ def second_stage():
                 if "," not in rtp_line:
                     continue
                 ch_name, rtp_url = rtp_line.split(",", 1)
-                combined_lines.append(f"{ch_name},http://{ip_port}/rtp/{rtp_url.split('rtp://')[1]}")
+                combined_lines.append(f"{ch_name},http://{ip_port}/{rtp_url}")
 
     # 去重
     unique = {}
